@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>E-learning Platform</h1>
+    </header>
+    <main>
+        <section id="profile">
+            <h2>User Profile</h2>
+            <div class="profile-info">
+                <img src="userprofile.jpg" alt="User Profile Picture">
+                <h3>John Doe</h3>
+                <p>Email: abc0@example.com</p>
+            </div>
+        </section>
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <div class="course">
+                <img src="course1.jpg" alt="Course 1">
+                <h3>Course 1: Introduction to Programming</h3>
+                <p>Instructor: Smith</p>
+                <button onclick="enroll('Introduction to Programming')">Enroll</button>
+            </div>
+            <div class="course">
+                <img src="course2.png" alt="Course 2">
+                <h3>Course 2: Introduction to Java</h3>
+                <p>Instructor: John</p>
+
+                
+                <button onclick="enroll('Introduction to Java')">Enroll</button>
+            </div>
+            <div class="course">
+                <img src="course3.jpg" alt="Course 2">
+                <h3>Course 3: Advanced Mathematics</h3>
+                <p>Instructor: James</p>
+                <button onclick="enroll('Advanced Mathematics')">Enroll</button>
+            </div>
+            <!-- Add more courses as needed -->
+        </section>
+        <section id="progress">
+            <h2>Your Courses</h2>
+            <ul id="enrolled-courses">
+                <!-- Enrolled courses will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
